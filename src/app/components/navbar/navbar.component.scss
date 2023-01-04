@@ -1,0 +1,45 @@
+.navbar{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top:0;
+  left: 0;
+  margin: 0 auto;
+  background: rgb(240, 240, 240);
+  width: 100%;
+  min-height: 80px;
+  align-items: center;
+}
+.iconography{
+  margin-right: 30px;
+  font-size: 30px;
+  color: rgb(147, 147, 147);
+  text-decoration:none;
+
+}
+.iconography a{
+  margin: 10px;
+
+}
+
+.cards{
+  margin: 0 auto;
+}
+
+.cards a{
+  border-left: 1px solid gray;
+  color: rgb(147, 147, 147);
+  padding: 0 30px;
+
+
+}
+
+.cards a:first-child{
+  border-left: none;
+  padding-left: 0;
+}
+
+.cards span:hover{
+  cursor: pointer;
+  color: rgb(255, 162, 49);
+}
