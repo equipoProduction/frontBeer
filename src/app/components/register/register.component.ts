@@ -18,7 +18,6 @@ export class RegisterComponent {
   constructor( private registerService: RegisterService,  private fb: FormBuilder) {
     
  
-
     this.registerForm = this.fb.group({
    
       name: '',
@@ -53,7 +52,6 @@ ngOnInit(): void {
   
   add():void{
     const {name,surname,tel, date_birth, address, city , cp, email, password, status} = this.registerForm.getRawValue();
-    // const data = this.registerForm.getRawValue();
     this.registerForm.reset();
     this.registerService.addNewUser(name, surname, tel, date_birth, address, city , cp, email, password, status).subscribe(result=>{  
       if (result) {
