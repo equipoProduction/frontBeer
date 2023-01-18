@@ -26,7 +26,9 @@ import { ProductComponent } from './components/product/product.component';
     AboutComponent,
     LoginComponent,
     RegisterComponent,
-    ShopComponent
+    ShopComponent,
+    FooterComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
