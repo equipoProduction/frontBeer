@@ -8,6 +8,8 @@ import { LoginComponent } from './components/login/login.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { RegisterComponent } from './components/register/register.component';
 import { UserComponent } from './components/user/user.component';
+import { ProductComponent } from './components/product/product.component';
+
 
 
 
@@ -21,6 +23,7 @@ const routes: Routes = [
   {path:'shop',component:ShopComponent,pathMatch:'full'},
   {path:'register',component:RegisterComponent,pathMatch:'full'},
   {path:'user',component:UserComponent,pathMatch:'full'},
+  {path:'product',component:ProductComponent,pathMatch:'full'},
 ];
 
 @NgModule({
