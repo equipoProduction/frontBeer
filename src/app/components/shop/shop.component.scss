@@ -118,7 +118,7 @@ body{
     align-items: center;
     border-right: 1px solid rgb(147, 147, 147);
     height: 400px;
-    width: 33%;
+    width: 30%;
 }
 
 #imagenSeleccion{
@@ -126,6 +126,11 @@ body{
     width: 170px;
     border: 2px solid rgb(147, 147, 147);
     margin-top: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .descripcion{
