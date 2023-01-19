@@ -1,0 +1,29 @@
+.productAloneCard{
+  display:flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 500px;
+  width: 90%;
+  border: 1px solid #000;
+  justify-content: space-around;
+  align-items: center;
+}
+.photoBigBeer{
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height: 450px;
+  width:48%;
+  border: 1px solid gray;
+}
+.oneProductDetails{
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height: 450px;
+  width:48%;
+  border: 1px solid gray;
+
+}
