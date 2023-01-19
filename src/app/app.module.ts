@@ -12,8 +12,11 @@ import { AboutComponent } from './components/about/about.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ShopComponent } from './components/shop/shop.component';
-import { ReactiveFormsModule } from '@angular/forms'
-import {HttpClientModule} from '@angular/common/http';
+import { FooterComponent } from './components/footer/footer.component';
+import { ProductComponent } from './components/product/product.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import {HttpClientModule} from '@angular/common/http';
     AboutComponent,
     LoginComponent,
     RegisterComponent,
-    ShopComponent
+    ShopComponent,
+    FooterComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
