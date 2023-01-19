@@ -24,7 +24,7 @@ import { ShopComponent } from './components/shop/shop.component';
     AboutComponent,
     LoginComponent,
     RegisterComponent,
-    ShopComponent
+    ShopComponent,
   ],
   imports: [
     BrowserModule,
