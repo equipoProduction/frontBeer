@@ -12,6 +12,168 @@ body{
 
 .header{
     color: orangered;
+    font-size: 45px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    text-align: center; 
+  }
+  h5{
+    color: rgb(156, 49, 10);
+  }
+
+.news{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50px;
+
+}
+
+.subheader{
+    color: rgb(169, 34, 0);
+    font-size: 20px;
+    height: 30px;
+    width: 250px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttonTipos{
+    // background:rgb(171, 144, 53);
+    width: 240px;
+    padding:4;
+    transition: 500ms;
+    color: rgb(169, 34, 0);
+}
+
+#buttonTipos:hover{
+    background:rgb(199, 174, 94);
+}
+
+#tipoCerveza{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    height: 200px;
+    // border: 2px solid black;
+}
+
+.imagenTipo{
+    height: 200px;
+    width: 170px;
+    border: 2px solid rgb(147, 147, 147);
+}
+
+.imagen{
+    height: 200px;
+    width: 170px;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.separador{
+    margin-top: 80px;
+    border-top: 1px rgb(147, 147, 147) solid;
+}
+
+.sugerencias{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.columnaIzquierda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid rgb(147, 147, 147);
+    height: 400px;
+    width: 33%;
+}
+
+#imagenSeleccion{
+    height: 200px;
+    width: 170px;
+    border: 2px solid rgb(147, 147, 147);
+    margin-top: 50px;
+}
+
+#imagenSeleccion2{
+    height: 200px;
+    width: 170px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(167, 111, 111, 0.621);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(147, 147, 147);
+    height: 50px;
+    width: 240px;
+}
+
+.columnaCentral{
+    display: flex;
+    flex-direction: column;
+    // border: 2px solid rgb(147, 147, 147);
+    border-right: 1px solid rgb(147, 147, 147);
+    width: 33%;
+
+}
+
+.sugerencia{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    // border: 2px solid rgb(147, 147, 147);
+}
+
+#imagenSugerencia{
+    width: 100px;
+    height: 110px;
+    border: 2px solid rgb(147, 147, 147);
+}
+
+.nombreProducto{
+    margin-left: 20px;
+}
+
+.puntuacion{
+    margin-left: 20px;
+}
+
+.columnaDerecha{
+    display: flex;
+    flex-direction: column;
+    // border: 2px solid rgb(147, 147, 147);
+    width: 33%;
+}
+.card{
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.377);
+    background-color: rgba(184, 181, 181, 0.02);
+}
+
+.home-container{
+    text-align: center;
+    height: 100px;
+}
+
+.header{
+    color: orangered;
     font-size: 50px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
