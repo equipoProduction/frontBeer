@@ -1,3 +1,10 @@
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;;
+}
+
 .home-container{
     text-align: center;
     height: 100px;
@@ -18,6 +25,36 @@
 
 }
 
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    background-color: #FFFFFF;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
 .subheader{
     color: rgb(169, 34, 0);
     font-size: 20px;
@@ -31,7 +68,9 @@
 
 #buttonTipos{
     // background:rgb(171, 144, 53);
-    width: 240px;
+    display: none;
+    position: absolute;
+    width: 100%;
     padding:4;
     transition: 500ms;
     color: rgb(169, 34, 0);
@@ -51,9 +90,13 @@
 }
 
 .imagenTipo{
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
     width: 170px;
     border: 2px solid rgb(147, 147, 147);
+    border-radius: 20px;
 }
 
 .imagen{
@@ -65,7 +108,7 @@
 
 .separador{
     margin-top: 80px;
-    border-top: 1px rgb(147, 147, 147) solid;
+    border-top: 1px rgb(147, 147, 147) solid;;
 }
 
 .sugerencias{
@@ -78,9 +121,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right: 1px solid rgb(147, 147, 147);
-    height: 400px;
-    width: 33%;
+    // border-right: 1px solid rgb(147, 147, 147);
+    height: 100vh;
+    width: 30%;
 }
 
 #imagenSeleccion{
@@ -88,6 +131,7 @@
     width: 170px;
     border: 2px solid rgb(147, 147, 147);
     margin-top: 50px;
+    border-radius: 20px;
 }
 
 .descripcion{
@@ -97,13 +141,14 @@
     border: 2px solid rgb(147, 147, 147);
     height: 50px;
     width: 240px;
+    margin-top: 70px;;
+    border-radius: 20px;
 }
 
 .columnaCentral{
     display: flex;
     flex-direction: column;
     // border: 2px solid rgb(147, 147, 147);
-    border-right: 1px solid rgb(147, 147, 147);
     width: 33%;
 
 }

@@ -1,85 +1,226 @@
-<div class="home-container">
-    <h1 class="header">Cervezas</h1>
-</div>
-<div class="news">
-    <div>
-        <h1 class="subheader">Elige tus cervezas favoritas</h1>
+<body>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous"
+    />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+    <div class="home-container">
+        <h1 class="header">Cervezas Artesanales</h1>
     </div>
-    <div>
-        <h1 class="subheader" id="buttonTipos">Tipos de cervezas</h1>
-    </div>
-</div>
-<div id="tipoCerveza">
-    <div class="imagenTipo">
-        <img class="imagen" src="/assets/images/corona.png">
-    </div>
-    <div class="imagenTipo">
-        <img class="imagen" src="/assets/images/heineken.png">
-    </div>
-    <div class="imagenTipo">
-        <img class="imagen" src="/assets/images/sol.png">
-    </div>
-</div>
-<div class="separador">
-</div>
-<div class="sugerencias">
-    <div class="columnaIzquierda">
-        <img id="imagenSeleccion" src="/assets/images/rubia.jpg">
-        <p class="descripcion">Descripción</p>
+    <div class="news">
         <div>
-            <h1 class="subheader" id="buttonTipos">COMPRAR</h1>
+            <h1 class="subheader">Elige tus cervezas favoritas</h1>
+        </div>
+        <div class="dropdown">
+            <button id="butttonTipos">Tipos de cervezas</button>
+                <div class="dropdown-content">
+                        <a value="rubia">Rubia</a>
+                        <a value="tostada">Tostada</a>
+                        <a value="negra">Negra</a>
+                </div>
         </div>
     </div>
-    <div class="columnaCentral">
-        <div class="sugerencia">
-            <img id="imagenSugerencia" src="/assets/images/tostada.jpg">
-            <div id="informacion">
-                <p class="nombreProducto">Nombre Producto</p>
-                <p class="puntuacion">Puntuación</p>
-                <p class="puntuacion">Precio</p>
+    <div id="tipoCerveza">
+        <div class="imagenTipo">
+            <img class="imagen" src="https://okasional-beer.com/13581-large_default/hardwired-for-sex.jpg">
+        </div>
+        <div class="imagenTipo">
+            <img class="imagen" src="https://okasional-beer.com/14588-large_default/tropical-riot.jpg">
+        </div>
+        <div class="imagenTipo">
+            <img class="imagen" src="https://okasional-beer.com/14581-large_default/walking-coeliacs.jpg">
+        </div>
+    </div>
+    <div class="separador">
+    </div>
+    <div class="sugerencias">
+        <div class="columnaIzquierda">
+            <img id="imagenSeleccion" src="https://okasional-beer.com/14596-large_default/silent-majority.jpg">
+            <p class="descripcion">Descripción</p>
+            <div>
+                <h1 class="subheader" id="buttonTipos">COMPRAR</h1>
             </div>
         </div>
-        <div class="sugerencia">
-            <img id="imagenSugerencia" src="/assets/images/rubia.jpg">
-            <div id="informacion">
-                <p class="nombreProducto">Nombre Producto</p>
-                <p class="puntuacion">Puntuación</p>
-                <p class="puntuacion">Precio</p>
+        <div class="columnaCentral">
+            <!-- <div class="sugerencia">
+                <img id="imagenSugerencia" src="https://okasional-beer.com/14583-large_default/alice-the-dog.jpg">
+                <div id="informacion">
+                    <p class="nombreProducto">Nombre Producto</p>
+                    <p class="puntuacion">Puntuación</p>
+                    <p class="puntuacion">Precio</p>
+                </div>
+            </div> -->
+            <!-- <div class="sugerencia">
+                <img id="imagenSugerencia" src="https://okasional-beer.com/14247-large_default/off-the-record.jpg">
+                <div id="informacion">
+                    <p class="nombreProducto">Nombre Producto</p>
+                    <p class="puntuacion">Puntuación</p>
+                    <p class="puntuacion">Precio</p>
+                </div>
             </div>
+            <div class="sugerencia">
+                <img id="imagenSugerencia" src="https://okasional-beer.com/14208-large_default/nitro-peanut-better-stout.jpg">
+                <div id="informacion">
+                    <p class="nombreProducto">Nombre Producto</p>
+                    <p class="puntuacion">Puntuación</p>
+                    <p class="puntuacion">Precio</p>
+                </div>
+            </div> -->
+            <div class="sugerencias m-auto p-2">
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                        <img id="imagenSugerencia" src="https://okasional-beer.com/14583-large_default/alice-the-dog.jpg" class="img-fluid rounded-start" alt="...">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Negra Mercadona</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel cursus tellus, fringilla tempor tortor. Etiam pharetra pretium est.</p>
+                                    <p class="card-text">Precio: <strong>3.95€</strong>  </p>
+                                    <small class="text-muted">  Puntuación: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i></small>
+                                    <br>
+                                    <button class="btn btn-dark btn-sm position-absolute bottom-0 end-0 mb-3 mx-3"></button>
+                                    <button type="button" class="btn btn-dark btn-sm position-absolute bottom-0 end-0 mb-3 mx-3">
+                                    <i class="bi bi-cart4"></i><span> <span class="visually-hidden">Añadido al carrito</span></span> 
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sugerencias m-auto p-2">
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                        <img id="imagenSugerencia" src="https://okasional-beer.com/14247-large_default/off-the-record.jpg" class="img-fluid rounded-start" alt="...">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Negra Carrefour</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel cursus tellus, fringilla tempor tortor. Etiam pharetra pretium est.</p>
+                                    <p class="card-text">Precio: <strong>3.95€</strong>  </p>
+                                    <small class="text-muted">  Puntuación: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i></small>
+                                    <br>
+                                    <button class="btn btn-dark btn-sm position-absolute bottom-0 end-0 mb-3 mx-3"></button>
+                                    <button type="button" class="btn btn-dark btn-sm position-absolute bottom-0 end-0 mb-3 mx-3">
+                                    <i class="bi bi-cart4"></i><span><span class="visually-hidden">Añadido al carrito</span></span> 
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sugerencias m-auto p-2">
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                        <img id="imagenSugerencia" src="https://okasional-beer.com/14208-large_default/nitro-peanut-better-stout.jpg" class="img-fluid rounded-start" alt="...">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rubia Turia</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel cursus tellus, fringilla tempor tortor. Etiam pharetra pretium est.</p>
+                                    <p class="card-text">Precio: <strong>4.95€</strong>  </p>
+                                    <small class="text-muted">  Puntuación: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i></small>
+                                    <br>
+                                    <button class="btn btn-dark btn-sm position-absolute bottom-0 end-0 mb-3 mx-3"></button>
+                                    <button type="button" class="btn btn-dark btn-sm position-absolute bottom-0 end-0 mb-3 mx-3">
+                                    <i class="bi bi-cart4"></i><span><span class="visually-hidden">Añadido al carrito</span></span> 
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-        <div class="sugerencia">
-            <img id="imagenSugerencia" src="/assets/images/negra.jpg">
-            <div id="informacion">
-                <p class="nombreProducto">Nombre Producto</p>
-                <p class="puntuacion">Puntuación</p>
-                <p class="puntuacion">Precio</p>
+        <div class="columnaDerecha">
+            <!-- <div class="sugerencia">
+                <img id="imagenSugerencia" src="https://okasional-beer.com/14382-large_default/kahuna.jpg">
+                <div id="informacion">
+                    <p class="nombreProducto">Nombre Producto</p>
+                    <p class="puntuacion">Puntuación</p>
+                    <p class="puntuacion">Precio</p>
+                </div>
+            </div>
+            <div class="sugerencia">
+                <img id="imagenSugerencia" src="https://okasional-beer.com/14484-large_default/billie-is-a-punk-rocker.jpg">
+                <div id="informacion">
+                    <p class="nombreProducto">Nombre Producto</p>
+                    <p class="puntuacion">Puntuación</p>
+                    <p class="puntuacion">Precio</p>
+                </div>
+            </div>
+            <div class="sugerencia">
+                <img id="imagenSugerencia" src="https://okasional-beer.com/8310-large_default/man-behind-the-scene.jpg">
+                <div id="informacion">
+                    <p class="nombreProducto">Nombre Producto</p>
+                    <p class="puntuacion">Puntuación</p>
+                    <p class="puntuacion">Precio</p>
+                </div>
+            </div> -->
+            <div class="sugerencias m-auto p-2">
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                        <img id="imagenSugerencia" src="https://okasional-beer.com/14596-large_default/silent-majority.jpg" class="img-fluid rounded-start" alt="...">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tostada Turia</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel cursus tellus, fringilla tempor tortor. Etiam pharetra pretium est.</p>
+                                    <p class="card-text">Precio: <strong>5.95€</strong>  </p>
+                                    <small class="text-muted">  Puntuación: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i></small>
+                                    <br>
+                                    <button class="btn btn-dark btn-sm position-absolute bottom-0 end-0 mb-3 mx-3"></button>
+                                    <button type="button" class="btn btn-dark btn-sm position-absolute bottom-0 end-0 mb-3 mx-3">
+                                    <i class="bi bi-cart4"></i><span><span class="visually-hidden">Añadido al carrito</span></span> 
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sugerencias m-auto p-2">
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                        <img id="imagenSugerencia" src="https://okasional-beer.com/14247-large_default/off-the-record.jpg" class="img-fluid rounded-start" alt="...">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tostada Carrefour</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel cursus tellus, fringilla tempor tortor. Etiam pharetra pretium est.</p>
+                                    <p class="card-text">Precio: <strong>3.95€</strong>  </p>
+                                    <small class="text-muted">  Puntuación: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i></small>
+                                    <br>
+                                    <button class="btn btn-dark btn-sm position-absolute bottom-0 end-0 mb-3 mx-3"></button>
+                                    <button type="button" class="btn btn-dark btn-sm position-absolute bottom-0 end-0 mb-3 mx-3">
+                                    <i class="bi bi-cart4"></i><span><span class="visually-hidden">Añadido al carrito</span></span> 
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sugerencias m-auto p-2">
+                <div class="card mb-3" >
+                    <div class="row g-0">
+                        <img id="imagenSugerencia" src="https://okasional-beer.com/14208-large_default/nitro-peanut-better-stout.jpg" class="img-fluid rounded-start" alt="...">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tostada Hacendado</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel cursus tellus, fringilla tempor tortor. Etiam pharetra pretium est.</p>
+                                    <p class="card-text">Precio: <strong>6.95€</strong>  </p>
+                                    <small class="text-muted">  Puntuación: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i></small>
+                                    <br>
+                                    <button class="btn btn-dark btn-sm position-absolute bottom-0 end-0 mb-3 mx-3"></button>
+                                    <button type="button" class="btn btn-dark btn-sm position-absolute bottom-0 end-0 mb-3 mx-3">
+                                    <i class="bi bi-cart4"></i><span><span class="visually-hidden">Añadido al carrito</span></span> 
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="columnaDerecha">
-        <div class="sugerencia">
-            <img id="imagenSugerencia" src="/assets/images/rubia.jpg">
-            <div id="informacion">
-                <p class="nombreProducto">Nombre Producto</p>
-                <p class="puntuacion">Puntuación</p>
-                <p class="puntuacion">Precio</p>
-            </div>
-        </div>
-        <div class="sugerencia">
-            <img id="imagenSugerencia" src="/assets/images/tostada.jpg">
-            <div id="informacion">
-                <p class="nombreProducto">Nombre Producto</p>
-                <p class="puntuacion">Puntuación</p>
-                <p class="puntuacion">Precio</p>
-            </div>
-        </div>
-        <div class="sugerencia">
-            <img id="imagenSugerencia" src="/assets/images/negra.jpg">
-            <div id="informacion">
-                <p class="nombreProducto">Nombre Producto</p>
-                <p class="puntuacion">Puntuación</p>
-                <p class="puntuacion">Precio</p>
-            </div>
-        </div>
-    </div>
-</div>
+</body>
