@@ -5,17 +5,29 @@ rel="stylesheet"
 <div class="card animate__animated animate__fadeInDown col-md-4 m-auto mt-5 p-3">
     <div class="mx-4">
         <h1 class="header">Cervezas artesanales</h1>
-        <form class="form-goup mt-4"> 
+        <form [formGroup]="loginForm" (submit)="login()" class="form-goup mt-4"> 
             <!-- Email input -->
             <div class="form-outline mb-4">
                 <label class="form-label" for="form2Example1">Dirección de correo electrónico</label>
-              <input type="email" id="form2Example1" class="form-control" />
+              <input type="email"
+                id="email"
+                formControlName="email"
+                class="form-control"
+                required />
             </div>
           
             <!-- Password input -->
             <div class="form-outline mb-4">
                 <label class="form-label" for="form2Example2">Password</label>
-              <input type="password" id="form2Example2" class="form-control" />
+              <input 
+              type="password" 
+              formControlName="password"
+              id="password"
+              class="form-control"
+              minlength="8"
+              maxlength="20"
+              required
+               />
             </div>
           
             <!-- 2 column grid layout for inline styling -->
@@ -27,7 +39,12 @@ rel="stylesheet"
                   <label class="form-check-label" for="form2Example31"> Recuérdame </label>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary btn-block mb-4 mt-3">Registrarse</button>
+              <button [disabled]="loginForm.invalid"  
+               [formNoValidate]="btnValited()" 
+               [ngClass]="stylebtn" 
+               type="submit"
+              class="btn btn-primary btn-block mb-4 mt-3"
+              >Iniciar sesión</button>
               <div class="col">
                 <!-- Simple link -->
                 <a href="#!">¿Se te olvidó tu contraseña?</a>
@@ -39,7 +56,7 @@ rel="stylesheet"
             <!-- Register buttons -->
             <div class="text-center">
               <p>¿Quieres registraste? <a href="http://localhost:4200/register">Register</a></p>
-              <p>o regístrese con:</p>
+              <!-- <p>o regístrese con:</p>
               <button type="button" class="btn btn-link btn-floating mx-1">
                 <i class="fab fa-facebook-f"></i>
               </button>
@@ -52,12 +69,14 @@ rel="stylesheet"
                 <i class="fab fa-twitter"></i>
               </button>
           
-              <button type="button" class="btn btn-link btn-floating mx-1">
+              <button  class="btn btn-link btn-floating mx-1">
                 <i class="fab fa-github"></i>
-              </button>
+              </button> -->
+              <!-- <p class="mensaje">{{rta}}</p> -->
             </div>
           </form>
     </div>
    
   </div>
 
+ 

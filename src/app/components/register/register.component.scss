@@ -1,14 +1,16 @@
 .card{
     box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.377);
     background-color: rgba(184, 181, 181, 0.02);
+    background-color: rgb(253, 254, 255);
 }
 
 .header{
-    color: orangered;
+    color: #CD104D;
     font-size: 45px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
-    text-align: center; 
+    text-align: center;  
+    // text-shadow: 0px 0px 5px #9C2C77
   }
 
   .mensaje{
@@ -17,6 +19,15 @@
     font-weight: 600;
   }
 
+  .susi{
+    
+      text-align: justify;
+      text-justify: inter-word;
+  }
 
+  // .btn-success{
+  //   background-color:#439A97;
+  //   border-color: #214b49;
+  // }
 
   

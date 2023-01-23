@@ -1,15 +1,12 @@
-body{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;;
+.home-container{
+    text-align: center;
+    height: 100px;
 }
 
 .home-container{
     text-align: center;
     height: 100px;
 }
-
 .header{
     color: orangered;
     font-size: 45px;

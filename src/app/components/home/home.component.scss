@@ -3,21 +3,26 @@
 }
 
 .header{
-  color: orangered;
+  color: #CD104D;
   font-size: 50px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 600;
 
 }
 .news{
-  background-color: orangered;
+  background-color: rgba(214, 97, 29, 0.973);
   color: rgb(250, 219, 216);
   font-size: 50px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  h5{
+  margin-left: 1cm;
 }
+}
+
 .subheader{
   margin-left: 10px;
   color: rgb(169, 34, 0);
   font-size: 50px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
