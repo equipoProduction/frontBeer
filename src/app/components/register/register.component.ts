@@ -70,15 +70,11 @@ export class RegisterComponent {
   add(): void {
     const { name, surname, tel, date_birth, address, city, cp, email, password, status } = this.registerForm.getRawValue();
     this.registerForm.reset();
-    this.registerService.addNewUser(name, surname, tel, date_birth, address, city, cp, email, password, status).subscribe(result => {
-      const resultString = result.toString()
-      if (resultString !== '✋🏼 Oppss! Usuario ya esta regitrado') {
-        alert(`\n\n     Hola ${name}     \n
-        Solo queda un último paso para tomarnos unas cervezas 🍻\n
-        Debes verificar tu cuenta de correo 🤜🏼🤛🏼\n
-        💌 Revisa en tu email:  ${email}\n`)
-        console.log( Object.values(result));
-      } else alert(resultString)
+    this.registerService.addNewUser(name, surname, tel, date_birth, address, city , cp, email, password, status).subscribe(result=>{  
+      if (result) {
+        this.rta = result.toString();
+        console.log(result);
+      }
     })
   }
 }

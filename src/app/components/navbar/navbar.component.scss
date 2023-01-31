@@ -35,7 +35,6 @@
   color: rgb(147, 147, 147);
   padding: 0 30px;
 
-
 }
 
 .cards a:first-child{
@@ -46,4 +45,9 @@
 .cards span:hover{
   cursor: pointer;
   color: rgb(255, 162, 49);
+}
+app-logo {
+ svg{
+ width: 200px !important;
+ }
 }

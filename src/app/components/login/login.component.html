@@ -4,8 +4,8 @@ rel="stylesheet"
 />
 <div class="card animate__animated animate__fadeInDown col-md-4 m-auto mt-5 p-3">
     <div class="mx-4">
-        <h1 class="header">Cervezas artesanales</h1>
-        <form [formGroup]="loginForm" (submit)="login()" class="form-goup mt-4"> 
+      <app-logo></app-logo>
+      <form [formGroup]="loginForm" (submit)="login()" class="form-goup mt-4"> 
             <!-- Email input -->
             <div class="form-outline mb-4">
                 <label class="form-label" for="form2Example1">Dirección de correo electrónico</label>
@@ -15,7 +15,6 @@ rel="stylesheet"
                 class="form-control"
                 required />
             </div>
-          
             <!-- Password input -->
             <div class="form-outline mb-4">
                 <label class="form-label" for="form2Example2">Password</label>
