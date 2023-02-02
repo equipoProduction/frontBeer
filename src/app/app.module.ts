@@ -19,6 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { LogoComponent } from './components/logo/logo.component';
 
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +36,7 @@ import { LogoComponent } from './components/logo/logo.component';
     ShopComponent,
     FooterComponent,
     ProductComponent,
-    LogoComponent,
+
   ],
   imports: [
     BrowserModule,
