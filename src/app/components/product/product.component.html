@@ -1,5 +1,8 @@
 <div class="productAloneCard">
-  <div class="photoBigBeer">
+  <div class="photoBigBeer" *ngFor="let beerImage of beers">
+    <img class="beerImage" src="{{beerImage.photo1}}" >
+
+
 
   </div>
   <div class="oneProductDetails">
@@ -7,4 +10,5 @@
   </div>
 
 </div>
+
 

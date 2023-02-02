@@ -1,0 +1,16 @@
+export interface ProductCard {
+  id: string,
+  name: string,
+  price: Number,
+  description: string,
+  category?: string,
+  total?: Number,
+  brand?: string,
+  type?: string,
+  graduation?: Number,
+  packaging?: string,
+  zone?: string,
+  score?: Number,
+  novelty?: Boolean,
+  photo1: string,
+}
