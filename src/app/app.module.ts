@@ -37,6 +37,7 @@ import { LogoComponent } from './components/logo/logo.component';
     FooterComponent,
     ProductComponent,
     LogoComponent,
+
   ],
   imports: [
     BrowserModule,

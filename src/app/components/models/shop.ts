@@ -1,8 +1,10 @@
-export interface productComponent {
+export interface Product {
     _id: String,
-    total: Number
     name : String,
+    price: number,
     description: String,
+    category: string,
+    total: Number,
     brand: String,
     type: String,
     graduation: number,
@@ -10,7 +12,5 @@ export interface productComponent {
     zone: string,
     score: number,
     novelty: boolean,
-    price: number,
-    photo: string,
-    timestamps: true
+    photo1: string,
 }

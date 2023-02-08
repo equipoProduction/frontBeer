@@ -3,6 +3,11 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    justify-content: center;
+}
+
+#logo{
+    margin-left: 10px;
 }
 
 .home-container{
@@ -15,6 +20,9 @@ body{
     font-size: 50px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+ #logo{
+    animation-delay: 1s;
+ }
 
 .news{
     display: flex;
@@ -67,20 +75,18 @@ body{
 }
 
 #buttonTipos{
-    // background:rgb(171, 144, 53);
     display: none;
     position: absolute;
     width: 100%;
     padding:4;
     transition: 500ms;
-    color: rgb(169, 34, 0);
 }
 
 #buttonTipos:hover{
     background:rgb(199, 174, 94);
 }
 
-#tipoCerveza{
+#novedadesCerveza{
     margin-top: 80px;
     display: flex;
     flex-direction: row;
@@ -96,12 +102,13 @@ body{
     width: 170px;
     border: 2px solid rgb(147, 147, 147);
     border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(210, 209, 209);
 }
 
 .imagen{
     height: 200px;
-    width: 170px;
-    background-size: cover;
+    width: 160px;
+    object-fit: cover;
     background-position-x: center;
 }
 
@@ -111,45 +118,101 @@ body{
     margin-bottom: 20px;
 }
 
+.columnas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .sugerencias{
-    // margin-top: 20px;
+    display: flex;
+    width: 33%;
+}
+
+.tarjeta{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 220px;
+    border: 2px solid rgb(147, 147, 147);
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 10px 5px 5px rgb(210, 209, 209);
+    transition: background-color .5s;
 }
 
-.columnaIzquierda{
+// .tarjeta:hover {
+//     background-color: gold;
+// }
+
+#imagenSugerencia{
+    box-shadow: 10px 5px 5px rgb(210, 209, 209);
+}
+
+.details{
     display: flex;
     flex-direction: column;
+    align-content: space-between;
+    height: 300px;
+    width: 300px;
+}
+
+.name{
+    margin: 10px;
+    height: 40px;
+    width: 280px;
+}
+
+.description{
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 2.5em;
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
     margin-left: 10px;
-    width: 33%;
+    width: 280px;
+  }
+  .description:before {
+    content: '....';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .description:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 2em;
+    background: white;
+  }
+
+.price{
+    margin: 10px;
 }
 
-.columnaCentral{
+.score_carrito{
     display: flex;
-    flex-direction: column;
-    width: 33%;
-}
-
-.columnaDerecha{
-    display: flex;
-    flex-direction: column;
-    width: 33%;
+    justify-content: space-between;
+    margin: 10px;
+    width: 250px;
 }
 
 #imagenSugerencia{
-    width: 100px;
-    height: 110px;
+    width: 160px;
+    height: 180px;
     border: 2px solid rgb(147, 147, 147);
+    margin: 10px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 400px) {
 
     .home-container{
-        height: 70px;
-    }
-
-    .header {
-        font-size: 30px;
+        margin-top: 10px;
+        height: 100px;
+        width: 100px;
     }
 
     .subheader{
@@ -157,36 +220,47 @@ body{
     }
 
     .news{
-        height: 15px;
-        justify-content: space-around;
-        flex-direction: row;
-    }
-
-    #tipoCerveza{
-        margin-top: 40px;
-    }
-
-    .imagenTipo{
-        height: 160px;
-        width: 130px;
-    }
-
-    .imagen{
-        height: 140px;
-        width: 120px;
-    }
-    
-    .separador{
         margin-top: 10px;
+        flex-direction: column;
     }
-    .card-text{
+
+    #novedadesCerveza{
         display: none;
     }
 
-    small{
+    .columnas{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sugerencias{
+        justify-content: center;
+
+    }
+
+    .tarjeta{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 370px;
+    }
+
+    .imageCenter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imagenSugerencia{
+        box-shadow: 10px 5px 5px rgb(210, 209, 209);
+    }
+
+    .name{
+        text-align: center;
+    }
+
+    .description{
         display: none;
     }
 }
-
-
-
