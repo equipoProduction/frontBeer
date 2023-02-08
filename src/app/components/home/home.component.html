@@ -1,9 +1,29 @@
-
+<div class="general">
 <div class="home-container">
   <h1 class="header">Cervezas artesanales</h1>
 </div>
 <div class="news">
-  <h1 class="subheader">Novedades</h1>
+  
+  <h1 class="subheader">Novedades</h1>  
+
+  <div class="newProducts">
+    <img src="https://okasional-beer.com/14581-large_default/walking-coeliacs.jpg" alt="Cerveza1">
+    <img src="https://okasional-beer.com/14588-large_default/tropical-riot.jpg" alt="Cerveza2">
+    <img src="https://okasional-beer.com/14583-large_default/alice-the-dog.jpg" alt="Cerveza3">
+    
+
+  </div>
+  <h1 class=" subheader headerMarcas">Nuestras Marcas</h1>
+</div>
+</div>
+
+<div class="marcas row">
+  
+  <div class="brands" *ngFor="let brand of brands">
+    
+      <img clase="image" src="/assets/logotipos_cervezas/{{brand.image}}">
+
+  </div>
 </div>
 
 
