@@ -1,30 +1,55 @@
-.productAloneCard{
-  display:flex;
-  margin-left: 50px;
-  margin-right: 50px;
-  height: 500px;
-  width: 90%;
-  border: 1px solid #000;
-  justify-content: space-around;
-  align-items: center;
-}
-.photoBigBeer{
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  height: 450px;
-  width:48%;
-  border: 1px solid gray;
-}
-.oneProductDetails{
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  height: 450px;
-  width:48%;
-  border: 1px solid gray;
-
+#principal{
+    background-image:url('https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') ;  
 }
 
+@media (max-width: 575.98px) { 
+    #photo1{
+        margin-bottom: 1cm;
+    }
+   
+}
+
+@media (min-width: 575.98px) { 
+
+#photo1{
+    margin-left: 5cm;
+    
+}
+
+#description{
+    margin-right: 5cm;
+ }
+
+
+}
+body {
+    overflow: hidden; /* Hide scrollbars */
+  }
+
+  .card{
+    background-color: rgba(233, 227, 227, 0.877)!important;
+}
+p{
+    font-weight: 600;
+   
+}
+.marca{
+        color: rgb(180, 92, 10)!important;
+        font-size: large;
+    }
+
+.brand-image{
+    // 
+    margin-top: 4cm;
+    margin-left: 1cm;
+    display: inline;
+    padding: 8px;
+
+}
+.brands{
+    margin-top: 2cm!important;
+
+}
+img{
+    width: 100px;
+}

@@ -1,14 +1,393 @@
-<div class="productAloneCard">
-  <div class="photoBigBeer" *ngFor="let beerImage of beers">
-    <img class="beerImage" src="{{beerImage.photo1}}" >
-
-
-
+<body>
+  <div id="principal" class="contanier-fluit p-4 mt-5">
+    <div class="container-fluit row p-4 mx-auto">
+      <div id="photo1" class="col-md-4 col-sm-12" *ngIf="beer">
+        <img class="card p-4 w-100" src="{{ beer.photo1 }}" />
+      </div>
+      <div id="description" class="card col-md-4 col-sm-12" *ngIf="beer">
+        <div class="mx-5">
+          <h5 class="mt-4 text-danger mb-2 text-center">{{ beer.name }}</h5>
+          <hr />
+          <p class="marca">{{ beer.brand }}®</p>
+          <p>{{ beer.description }}</p>
+          <p>Tipo: {{ beer.type }}</p>
+          <p>Graduación {{ beer.graduation }}</p>
+          <p>Zona: {{ beer.zone }}</p>
+          <p>Puntiación: {{ beer.score }}</p>
+          <p>Novedad: {{ beer.novelty }}</p>
+          <hr />
+          <div class="row">
+            <div class="col-6">
+              <h5 class="text-danger">Precio: {{ beer.price }}€</h5>
+            </div>
+            <div class="col-6">
+              <div class="input-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  name=""
+                  id=""
+                  min="1"
+                />
+                <button class="btn btn-secondary btn-sm cart-button">
+                  <span><i class="fa fa-shopping-cart"></i></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="oneProductDetails">
 
-  </div>
-
-</div>
-
-
+  <section class="brands container-fluit">
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/62.jpg" alt="Naparbier" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/395.jpg" alt="Nepomucen" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/135.jpg" alt="Nómada" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/180.jpg" alt="Northern Monk" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/183.jpg" alt="O/O Brewing" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/381.jpg" alt="Oddity" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/444.jpg"
+        alt="OKasional Beer Merchandising"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/80.jpg" alt="Omnipollo" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/436.jpg"
+        alt="Orient Street Brewery"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/368.jpg" alt="Oso Brew" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/329.jpg"
+        alt="Packs OKasional Beer"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/244.jpg" alt="Península" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/351.jpg" alt="Piggy" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/181.jpg" alt="Pohjala" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/288.jpg" alt="Polly's Brew" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/228.jpg" alt="Pressure Drop" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/378.jpg" alt="Prizm" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/443.jpg"
+        alt="Protokoll Brewery"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/303.jpg" alt="Rec Brew" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/267.jpg"
+        alt="Redneck Brewery"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/20.jpg" alt="Reptilian" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/266.jpg" alt="Río Azul" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/374.jpg" alt="SanFrutos" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/457.jpg" alt="Scarface" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/459.jpg" alt="Sibeeria" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/127.jpg" alt="Sierra Nevada" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/82.jpg"
+        alt="Siren Craft Brew"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/141.jpg" alt="Soma Beer" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/349.jpg" alt="Sori Brewing" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/128.jpg" alt="Stigbergets" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/397.jpg"
+        alt="Superstition Meadery"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/187.jpg" alt="The Kernel" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/71.jpg"
+        alt="Tibidabo Brewing"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/225.jpg" alt="Tilquin" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/463.jpg"
+        alt="Vocation Brewery"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/258.jpg" alt="Wylie Brewery" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/317.jpg" alt="Zeta Beer" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/132.jpg" alt="Zulogaarden" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/197.jpg"
+        alt="18th Street Brewery"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/163.jpg" alt="AleSmith" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/61.jpg" alt="Almogàver" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/465.jpg" alt="Althaia" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/393.jpg"
+        alt="Animus Brewing Co."
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/274.jpg" alt="Arpus Brewing" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/355.jpg" alt="Attik Brewing" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/306.jpg" alt="Barrier" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/13.jpg"
+        alt="Basqueland Brewing Project"
+      />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/435.jpg"
+        alt="Bereta Brewing Co"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/340.jpg" alt="BierBoi" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/462.jpg" alt="Brewski" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/425.jpg"
+        alt="Brouwerij Alvinne"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/147.jpg" alt="Caleya" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/269.jpg" alt="Cantillon" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/372.jpg" alt="Caravelle" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/246.jpg"
+        alt="Cierzo Brewing"
+      />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/229.jpg"
+        alt="Cyclic Beer Farm"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/99.jpg" alt="De Molen" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/101.jpg" alt="De Struise" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/315.jpg" alt="DEYA Brewing" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/453.jpg" alt="Dos Dingos" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/318.jpg" alt="Doskiwis" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/15.jpg" alt="DouGall's" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/235.jpg" alt="Drunken Bros" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/148.jpg" alt="Espiga" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/445.jpg" alt="Fauve" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/344.jpg" alt="Fermenterarna" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/210.jpg" alt="Fermun Beer" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/442.jpg" alt="Fiftyfifty" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/448.jpg" alt="FlyBrew" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/144.jpg" alt="Founder's" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/281.jpg" alt="FrauGruber" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/323.jpg" alt="FUERST WIACEK" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/390.jpg" alt="Funky Fluid" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/117.jpg"
+        alt="Garage Beer Co"
+      />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/464.jpg"
+        alt="Greyhound Brewers"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/242.jpg" alt="Gross" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/22.jpg" alt="Guineu" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/412.jpg" alt="Hop Hooligans" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/450.jpg" alt="Hoppit" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/8.jpg"
+        alt="Jakobsland Brewers"
+      />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/404.jpg"
+        alt="Juguetes Perdidos"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/451.jpg" alt="Kom Beer" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/161.jpg" alt="Kusfollin" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/96.jpg" alt="La Calavera" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/352.jpg" alt="La Grúa" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/33.jpg" alt="La Pirata" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/11.jpg" alt="La Quince" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/121.jpg" alt="Laugar" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/158.jpg" alt="Lervig" />
+    </div>
+    <div class="brand-image">
+      <img
+        src="https://okasional-beer.com/img/m/407.jpg"
+        alt="Little Rain Brewing Company"
+      />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/122.jpg" alt="Lo Vilot" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/277.jpg" alt="Lo Vilot" />
+    </div>
+    <div class="brand-image">
+      <img src="https://okasional-beer.com/img/m/337.jpg" alt="Maresme" />
+      <div class="brand-image">
+        <img src="https://okasional-beer.com/img/m/124.jpg" alt="Matoll" />
+      </div>
+      <div class="brand-image">
+        <img src="https://okasional-beer.com/img/m/47.jpg" alt="Mikkeller" />
+      </div>
+    </div>
+  </section>
+</body>

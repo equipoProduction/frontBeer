@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-// import { FormBuilder, FormGroup } from '@angular/forms';
 import { ShopService } from '../../services/shop.service';
-import { Product } from '../models/shop';
+import { Product } from '../models/product';
+
 
 @Component({
   selector: 'app-shop',
@@ -14,7 +14,6 @@ export class ShopComponent {
   novelty_products:Product[]=[];
 
   constructor( private shopService:ShopService){
-   
       
   }
 
@@ -35,8 +34,7 @@ export class ShopComponent {
     this.shopService.getNovelty().subscribe(res=>this.novelty_products = res);
   }
 
-  puntuacion(score:number):any{
-    
+  puntuacion(score:number):any{    
     return new Array(Math.floor(score));
   }
 

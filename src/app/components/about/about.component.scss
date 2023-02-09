@@ -1,6 +1,7 @@
-img { margin: auto;}
+// @import url('https://fonts.googleapis.com/css2? family=Permanent+Marker&display=swap');
 
-@import url('https://fonts.googleapis.com/css2? family=Permanent+Marker&display=swap');
+img { margin: auto;} 
+
 p{
     margin-top: 80px;
     padding: 0;
@@ -14,13 +15,13 @@ p{
         color:#9e1641cc; 
     }
 }
+
 .animate__animated {
     --animate-duration: 1.3s;
   }
 
 #logo{
     animation-delay: 1.5s;
-
 }
 
 
