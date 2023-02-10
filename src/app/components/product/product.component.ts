@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../models/product';
 import { ProductService } from 'src/app/services/product.service';
-import { ActivatedRoute  } from '@angular/router';
+import { ActivatedRoute  } from '@angular/router'; 
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-product',
@@ -15,6 +16,7 @@ export class ProductComponent implements OnInit {
   constructor(
     private productService: ProductService,
     private activatedRoute: ActivatedRoute,
+    private scroller:ViewportScroller,
   ) { }
 
   ngOnInit(): void {
@@ -28,6 +30,10 @@ export class ProductComponent implements OnInit {
     })
 
     this.getProduct()
+  }
+
+  ngAfterViewChecked(){
+    this.scroller.scrollToAnchor("principal");
   }
 
   getProduct(): any {
