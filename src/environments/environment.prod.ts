@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  urlProd: 'backend1.formactiu.com'
+  urlProd: 'https://backend1.formactiu.com'
 };

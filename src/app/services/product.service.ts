@@ -15,7 +15,6 @@ export class ProductService {
   private url_get=`${this.urlProd}/api/get_product/`;
   private url_brand=`${this.urlProd}/api/get_brands`;
 
-
   constructor(private httpClient:HttpClient) {}
 
   getProducts():Observable<ProductCard[]>{
