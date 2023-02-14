@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, Observable, of } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
-  
-  private urlpost = 'http://localhost:3000/api/login';
+
+  private readonly urlProd = environment.urlProd;
+  private urlpost = `${this.urlProd}/api/login`;
 
 
   constructor(private httpClient: HttpClient) { }
