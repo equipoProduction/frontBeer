@@ -25,18 +25,9 @@
             </div>
         </div>
     </div>
-    <div id="novedadesCerveza">
-        <div class="imagenTipo" [routerLink]="['/product', novelty_products[0]._id]">
-            <img class="imagen" src="{{novelty_products[0].photo1}}">
-        </div>
-        <div class="imagenTipo" [routerLink]="['/product', novelty_products[2]._id]">
-            <img class="imagen" src="{{novelty_products[2].photo1}}">
-        </div>
-        <div class="imagenTipo" [routerLink]="['/product', novelty_products[4]._id]">
-            <img class="imagen" src="{{novelty_products[4].photo1}}">
-        </div>
-        <div class="imagenTipo" [routerLink]="['/product', novelty_products[6]._id]">
-            <img class="imagen" src="{{novelty_products[6].photo1}}">
+    <div class="row mt-5">
+        <div class="imagenTipo mx-auto" *ngFor="let novelty of novelty_products" [routerLink]="['/product', novelty._id]">
+            <img class="imagen" src="{{novelty.photo1}}">
         </div>
     </div>
     <div class="separador"></div>

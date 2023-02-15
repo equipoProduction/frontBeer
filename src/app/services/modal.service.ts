@@ -13,7 +13,6 @@ export class ModalService {
   }
   public getData (key: string):string{
     const p=localStorage.getItem(key)!;
-    console.log(p);
     return p;
   }
   public removeData(key: string){

@@ -31,7 +31,7 @@ export class ShopComponent {
   }
 
   getNovelty():void{
-    this.shopService.getNovelty().subscribe(res=>this.novelty_products = res);
+    this.shopService.getNovelty().subscribe(res=>this.novelty_products = res.slice(0,4));
   }
 
   puntuacion(score:number):any{    
